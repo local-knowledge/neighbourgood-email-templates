@@ -1,0 +1,229 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <title>Template</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="telephone=no" name="format-detection">
+  <link rel="stylesheet" type='text/css' href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i">
+  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Libre+Baskerville'>
+
+  <style>
+    body {
+      font-family: 'Open Sans', 'helvetica neue', helvetica, arial, sans-serif;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    h1 {
+      font-family: 'Libre Baskerville', 'helvetica neue', helvetica, arial, sans-serif;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 p {
+      font-family: 'Open Sans', 'helvetica neue', helvetica, arial, sans-serif;
+    }
+
+
+    p,
+    ul,
+    li {
+      font-size: 14px;
+    }
+
+    /* Centering the container div */
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      min-height: 100vh;
+      background-color: #F3F3F3;
+      z-index: 5;
+      position: relative;
+      /* Ensures the container takes at least the full viewport height */
+    }
+
+    .container-top-bg {
+      z-index: 1;
+      background-color: #28251b;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      height: 400px;
+    }
+
+    .container-bottom-bg {
+      z-index: 4;
+      background-color: #28251b;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      height: 200px;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .container-graphic-bg {
+      z-index: 1;
+      /* background-color: pink; */
+      width: 100%;
+      position: absolute;
+      bottom: 200px;
+      height: 200px;
+      background-image: url('./images/city-bg.svg');
+      background-size: cover;
+    }
+
+    /* Styling for the centered content */
+    .centered-content {
+      z-index: 2;
+      /* text-align: center; */
+      width: 700px;
+      height: 100%;
+      /* padding: 20px; */
+      /* border: 1px solid #ccc; */
+      border-radius: 5px;
+      /* background-color: #f5f5f5; */
+    }
+
+    .section {
+      display: flex;
+      width: 100%;
+      /* padding: 20px; */
+      /* border: 1px solid #ccc; */
+    }
+
+    .divider {
+      width: 100%;
+      height: 2px;
+      background-color: #f7ceba;
+      margin: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="center-container">
+    <div class="centered-content">
+      <div class="section" style="height: 130px; justify-content: space-between; align-items: center;">
+        <!-- <h1 style="color: white;">neighbourgood</h1> -->
+        <img src="./images/neighbourgood-logo-two-white.png" width="300px" alt="">
+        <a href="https://neighbourgood.co.za/"
+          style="height: 20px; border: white 1px solid; padding: 10px 20px; color: white; font-size: 12px;">
+          EXPLORE NOW
+        </a>
+      </div>
+      <div class="section">
+        <img src="./images/reserve-3.png" style="object-fit: cover; height: 400px; width: 100%;" alt="">
+      </div>
+
+      <div class="section" style="flex-direction: column;">
+        <h1 style="padding: 0 30px">Your stay is almost here!</h1>
+        <h3 style="padding: 0 30px">Hello, {{FirstName}}!</h3>
+        <p style="padding: 0 30px">A warm welcome from the Neighbourgood team! We're over the moon to have you join our
+          vibrant community at {{HotelName}}. Your booking for {{Arrival}} to {{Departure}} is confirmed, and we're
+          ready to pull
+          out all the stops to make your stay nothing short of amazing. Whether you're here to conquer the work world or
+          take a well-deserved breather, we've got you covered.
+        </p>
+
+        <p style="padding: 0 30px">We're counting down the days until you join us at {{HotelName}}. You’re
+          due to arrive on {{ArrivalDay}} and
+          we hope you’re ready to make the most of your time with us. As a reminder, check-in time is from 14h00 and
+          check-out is at 10h00.</p>
+
+        <p style="padding: 0 30px"> Let's play a quick round of 'Getting To Know You', Neighbourgood-style:</p>
+
+        <ul style="padding: 0 30px">
+          <li>Could you share your direct email address and a contact number?</li>
+          <li>Any idea when you'll be pulling into our neighbourhood? Just to make sure we're looking our absolute best
+            when you arrive.</li>
+
+          <li>Any special occasions on the horizon? Birthdays, anniversaries, or a solo</li>
+          <li>Is there any chance you'll be arriving after hours?</li>
+          <li>How many people are in your party?</li>
+          <li>“I-just-finished-my-first-novel” celebration? We'd love to add a dash of Neighbourgood cheer!</li>
+        </ul>
+
+        <p style="padding: 0 30px">Before you arrive, take a sneak peek at our events <a
+            href="https://neighbourgood.co.za/events">calendar</a>. It's your ticket to our vibrant community and all
+          that it offers. Did
+          you know that if you stay wth us, you’re able to use a hot desk at our Workspaces at no additional cost?</p>
+
+        <p style="padding: 0 30px">Looking to create lifelong memories? Our partners at Local Knowledge offer a variety
+          of truly authentic & personalised, local experiences designed specifically for our neighbours. From a roadtrip
+          down the peninsula coast, to a wine & "braai" (bbq) masterclass on a private wine estate, the team are here to
+          show you the best hidden gems that Cape Town has to offer! Experience like a local - <a
+            href="http://localknowledgetours.com">Book now</a>.</p>
+
+        <p style="padding: 0 30px">Keep us in the loop and we guarantee a trip for the books. We look forward to meeting
+          you soon!</p>
+
+        <p style="padding: 0 30px">Best regards,<br>
+          Neighbourgood Team</p>
+      </div>
+
+      <div class="divider"></div>
+      <div class="section" style="flex-direction: column; padding: 0 30px">
+        <div style="display: flex; padding: 10px 0px; font-size: 14px;">
+          <span style="flex: 1; font-weight: 600;">PROPERTY DETAILS</span>
+          <span style="flex: 2;">Neighbourgood Reserve<br>
+            130 Adderley Street, Cape Town Central, 8001<br>
+            <a href="https://goo.gl/maps/AJPhAbeEiCGpU1qj9">Map / Directions</a><br>
+            +27 (79) 097 9314<br>
+            hello@neighbourgood.co.za</span>
+        </div>
+      </div>
+      <div class="divider"></div>
+
+      <div class="section" style="height: 400px;"></div>
+    </div>
+    <div class="container-top-bg"></div>
+    <div class="container-graphic-bg"></div>
+    <div class="container-bottom-bg">
+      <div class="centered-content"
+        style="height: auto; display: flex; justify-content: space-between; align-items: center; padding: 50px 0">
+        <p>NEIGHBOURGOOD EAST CITY<br>
+          60 Corporation Street, Cape Town Central, 8001<br>
+          +27 (0)21 140 6778<br>
+          <a href="mailto:hello@neighbourgood.co.za">hello@neighbourgood.co.za</a>
+        </p>
+        <div style="display: flex;">
+          <img src="./images/slogan.png" height="130px" alt="the future is good">
+          <div style="display: flex; flex-direction: column; text-align: right; margin-left: 20px;">
+            <p>
+              <a href="https://www.instagram.com/neighbourgood_sa/">
+                <img src="./images/instagram.svg" height="35px" alt="instagram">
+              </a>
+              <a href="https://www.facebook.com/neighbourgoodsa" style="padding:0 5px">
+                <img src="./images/facebook.svg" height="35px" alt="facebook">
+              </a>
+              <a href="https://www.linkedin.com/company/neighbourgood/">
+                <img src="./images/linkedin.svg" height="35px" alt="linkedin">
+              </a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com/neighbourgood_sa/">@neighbourgood_sa</a>
+              <br><a href="https://neighbourgood.co.za/">neighbourgood.co.za</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
