@@ -44,7 +44,7 @@
       justify-content: center;
       align-items: start;
       min-height: 100vh;
-      background-color: #F3F3F3;
+      background-color: #FFF;
       z-index: 5;
       position: relative;
       /* Ensures the container takes at least the full viewport height */
@@ -69,6 +69,11 @@
       color: white;
       display: flex;
       justify-content: space-around;
+    }
+
+    .container-bottom-bg a {
+      text-decoration: none;
+      color: #F7CFBB;
     }
 
     .container-graphic-bg {
@@ -110,7 +115,7 @@
 
     a {
       text-decoration: none;
-      color: gray;
+      color: #515DE6;
     }
   </style>
 </head>
@@ -133,7 +138,7 @@
 
       <div class="section" style="flex-direction: column;">
         <h1 style="padding: 0 30px">Thanks, neighbour!</h1>
-        <h3 style="padding: 0 30px">Hello, {{FirstName}}!</h3>
+        <h3 style="padding: 0 30px">Hello, {{FirstName}},</h3>
         <p style="padding: 0 30px">
           Thank you for choosing to stay with us here at {{HotelName}}. Your presence here added a special
           spark to our community and we're only letting you go because we know you won’t be able to stay away for long.
@@ -159,8 +164,8 @@
     <div class="container-bottom-bg">
       <div class="centered-content"
         style="height: auto; display: flex; justify-content: space-between; align-items: center; padding: 50px 0">
-        <p>NEIGHBOURGOOD EAST CITY<br>
-          60 Corporation Street, Cape Town Central, 8001<br>
+        <p>NEIGHBOURGOOD RESERVE<br>
+          130 Adderley Street, Cape Town Central, 8001<br>
           +27 (0)21 140 6778<br>
           <a href="mailto:hello@neighbourgood.co.za">hello@neighbourgood.co.za</a>
         </p>

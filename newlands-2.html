@@ -42,7 +42,7 @@
       justify-content: center;
       align-items: start;
       min-height: 100vh;
-      background-color: #F3F3F3;
+      background-color: #FFF;
       z-index: 5;
       position: relative;
       /* Ensures the container takes at least the full viewport height */
@@ -67,6 +67,11 @@
       color: white;
       display: flex;
       justify-content: space-around;
+    }
+
+    .container-bottom-bg a {
+      text-decoration: none;
+      color: #F7CFBB;
     }
 
     .container-graphic-bg {
@@ -108,7 +113,7 @@
 
     a {
       text-decoration: none;
-      color: gray;
+      color: #515DE6;
     }
   </style>
 </head>
@@ -131,7 +136,7 @@
 
       <div class="section" style="flex-direction: column;">
         <h1 style="padding: 0 30px">You're all set.</h1>
-        <h3 style="padding: 0 30px">Hello, {{FirstName}}!</h3>
+        <h3 style="padding: 0 30px">Hello, {{FirstName}},</h3>
         <p style="padding: 0 30px">Your payment for your stay at {{HotelName}} from {{Arrival}} to {{Departure}} has
           been
           successfully received! You're officially a part of our Neighbourgood community.</p>
@@ -166,11 +171,6 @@
         </div>
 
         <div style="display: flex; padding-top: 10px;">
-          <span style="flex: 1; font-weight: 600;">ROOM TYPE</span>
-          <span style="flex: 2;">[Insert room type]</span>
-        </div>
-
-        <div style="display: flex; padding-top: 10px;">
           <span style="flex: 1; font-weight: 600;">GUESTS</span>
           <span style="flex: 2;">{{Adults}}]</span>
         </div>
@@ -198,7 +198,7 @@
       <div class="centered-content"
         style="height: auto; display: flex; justify-content: space-between; align-items: center; padding: 50px 0">
         <p>NEIGHBOURGOOD NEWLANDS<br>
-          10 Hemlock Street, Newlands, Cape Town, 7700<br>
+          10 Hemlock Street, Newlands, 7960<br>
           +27 (0)21 140 6778<br>
           @neighbourgood_sa hello@neighbourgood.co.za</p>
         <div style="display: flex;">
