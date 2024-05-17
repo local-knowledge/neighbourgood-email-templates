@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin: 10px 0; /* Add spacing between rows */
+  }
+  
+  td {
+    border: none;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding-left: 50%; 
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-label); /* Use custom data-label attributes */
+    font-weight: bold;
+  }
+}
+</style>
+    </head>
+    <body>
+        <div>
+            <div>item one</div>
+            <div>item one</div>
+            <div>item one</div>
+        </div>
+    </body>
+</html>
