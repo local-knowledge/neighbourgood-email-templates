@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <title>{{HotelName}} Confirmation of your cancellation</title>
+        <!--
+            This layout is using Email Blueprints sources - https://github.com/mailchimp/Email-Blueprints
+            Email blueprints are licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.
+       -->
+        <!--
+        	Outlook Conditional CSS
+
+            These two style blocks target Outlook 2007 & 2010 specifically, forcing
+            columns into a single vertical stack as on mobile clients. This is
+            primarily done to avoid the 'page break bug' and is optional.
+
+            More information here:
+			http://templates.mailchimp.com/development/css/outlook-conditional-css
+        -->
+        <style type="text/css">.flexibleContainer { display: block !important; width: 100% !important; }</style>
+        <!--[endif]---->
+        <!--[if mso 14]>
+      <style type="text/css">
+        .flexibleContainer {
+          display: block !important;
+          width: 100% !important;
+        }
+      </style>
+    <![endif]-->
+        <style type="text/css">/* ////// RESET STYLES ////// */body, #bodyTable, #bodyCell { height: 100% !important; margin: 0; padding: 0; width: 100% !important; } a { text-decoration: none !important; } table { border-collapse: collapse; } img, a img { border: 0; outline: none; text-decoration: none; } h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; } p { font-size: 14px; margin: 1em 0; } /* ////// CLIENT-SPECIFIC STYLES ////// */.ReadMsgBody { width: 100%; } .ExternalClass { width: 100%; } /* Force Hotmail/Outlook.com to display emails at full width. */.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; } /* Force Hotmail/Outlook.com to display line heights normally. */table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; } /* Remove spacing between tables in Outlook 2007 and up. */#outlook a { padding: 0; } /* Force Outlook 2007 and up to provide a "view in browser" message. */img { -ms-interpolation-mode: bicubic; } /* Force IE to smoothly render resized images. */body, table, td, p, a, li, blockquote { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; } /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. *//* ////// FRAMEWORK STYLES ////// */.flexibleContainerCell { padding-top: 20px; padding-right: 20px; padding-left: 20px; } .flexibleImage { height: auto; } .bottomShim { padding-bottom: 20px; } .imageContent, .imageContentLast { padding-bottom: 20px; } .nestedContainerCell { padding-top: 20px; padding-right: 20px; padding-left: 20px; } /* ////// GENERAL STYLES ////// */body, #bodyTable { background-color: #f5f5f5; } #bodyCell { padding-top: 40px; padding-bottom: 40px; } #emailBody { background-color: #ffffff; border: 1px solid #dddddd; border-collapse: separate; border-radius: 4px; } h1, h2, h3, h4, h5, h6 { color: #202020; font-family: Helvetica; line-height: 150%; text-align: Left; margin-bottom: 16px; } h1 { font-size: 24px; } h2 { font-size: 20px; } h3 { font-size: 18px; } h4 { font-size: 16px; } h5 { font-size: 16px; } h6 { font-size: 14px; } .textContent, .textContentLast { color: #404040; font-family: Helvetica; font-size: 16px; line-height: 130%; text-align: Left; padding-bottom: 20px; } .textContent.preheaderContent { font-size: 12px; color: #666666; } .textContent a, .textContentLast a { color: #2c9ab7; text-decoration: underline; } .nestedContainer { background-color: #e5e5e5; border: 1px solid #cccccc; } .emailButton { background-color: #2c9ab7; border-collapse: separate; border-radius: 4px; } .buttonContent { color: #ffffff; font-family: Helvetica; font-size: 18px; font-weight: bold; line-height: 100%; padding: 15px; text-align: center; } .buttonContent a { color: #ffffff; display: block; text-decoration: none; } .emailCalendar { background-color: #ffffff; border: 1px solid #cccccc; } .emailCalendarMonth { background-color: #2c9ab7; color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; padding-top: 10px; padding-bottom: 10px; text-align: center; } .emailCalendarDay { color: #2c9ab7; font-family: Helvetica, Arial, sans-serif; font-size: 60px; font-weight: bold; line-height: 100%; padding-top: 20px; padding-bottom: 20px; text-align: center; } .block_large { display: block; } /* ////// HEADER ////// *//* @Power Images: Header, Footer images;
+		@section header and footer
+		@tip Set the size for your power images. */#headerImage, #footerImage { height: auto; max-width: 600px; width: 100%; } /* ////// FOOTER ////// *//* *
+        * @tab Footer
+        * @section footer text
+        * @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+        * @theme footer */.footerContent { /* @editable */ color: #808080;  /* @editable */ font-family: Helvetica;  /* @editable */ font-size: 12px;  /* @editable */ line-height: 150%;  /* @editable */ text-align: center; } /* @tab Footer
+		@section footer link
+		@tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text. */.footerContent a:link, .footerContent a:visited, .footerContent a .shortcuts, .footerContent a span { /* @editable */ color: #606060;  /* @editable */ font-weight: normal;  /* @editable */ text-decoration: underline; } .footer-container { display: flex; flex-wrap: wrap; justify-content: center; } .column { flex: 1; padding: 10px; box-sizing: border-box; } .col-1 { max-width: 40%; display: flex; align-items: center; justify-content: start; } .col-2 { max-width: 30%; display: flex; align-items: center; justify-content: center; } .col-3 { max-width: 30%; display: flex; align-items: center; justify-content: end; } /* ////// Social media  icons ////// *//* @Social media  icons
+		@section footer
+		@tip Set the size for your email's social channels links. */.img-social-media { /* @editable */ width: 48px; } /* ////// MOBILE STYLES ////// */@media only screen and (max-width: 599px) { body {  width: 100% !important;  min-width: 100% !important; }  /* HEADER */ #templatePreheader {  display: none; }  #headerImage, #footerImage {  height: auto !important;   /* @editable */  max-width: 600px !important;   /* @editable */  width: 100% !important; }  /* ////// FRAMEWORK STYLES ////// */ /* CSS selectors are written in attribute
+			selector format to prevent Yahoo Mail
+			from rendering media query styles on
+			desktop. */ table[id="emailBody"], table[class="flexibleContainer"] {  width: 100% !important; }  /* The following style rule makes any image classed with 'flexibleImage' fluid when the query activates. 
+		Make sure you add an inline max-width to those images to prevent them from blowing out. */ img[class="flexibleImage"] {  height: auto !important;  width: 100% !important; }  /* Make buttons in the email span the	full width of their container, allowing	for left- or right-handed ease of use. */ table[class="emailButton"] {  width: 100% !important; }  td[class="buttonContent"] {  padding: 0 !important; }  td[class="buttonContent"] a {  padding: 15px !important; }  td[class="textContentLast"], td[class="imageContentLast"] {  padding-top: 20px !important; }  .footer-container {  flex-direction: column; }  .column {  max-width: 100%;  display: flex;  align-items: center;  justify-content: center; }  .col-1 {  display: flex;  align-items: center;  justify-content: center; }  .col-2 {  display: flex;  align-items: center;  justify-content: center; }  .col-3 {  display: flex;  align-items: center;  justify-content: center; }  /* ////// GENERAL STYLES ////// */ td[id="bodyCell"] {  padding-top: 10px !important;  padding-right: 10px !important;  padding-left: 10px !important; }  .block_responsive {  display: block;  margin-bottom: 20px; } } @media only screen and (min-width: 599px) and (max-width: 639px) { #headerImage {  height: auto !important;   /* @editable */  max-width: 600px !important;   /* @editable */  width: 100% !important; } } .divider { width: 100%; height: 2px; background-color: #f7ceba; margin: 20px; }</style>
+        <link href="../../css/theme.css" rel="stylesheet" type="text/css">
+        <link href="../css/theme.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body style="
+      margin: 0;
+      padding: 0;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      background-color: #f5f5f5;
+      height: 100% !important;
+      width: 100% !important;
+    ">
+        <center>
+            <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="
+          border-collapse: collapse;
+          mso-table-lspace: 0pt;
+          mso-table-rspace: 0pt;
+          -ms-text-size-adjust: 100%;
+          -webkit-text-size-adjust: 100%;
+          margin: 0;
+          padding: 0;
+          background-color: #f5f5f5;
+          height: 100% !important;
+          width: 100% !important;
+        ">
+                <tbody>
+                    <tr>
+                        <td align="center" valign="top" id="bodyCell" style="
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+                margin: 0;
+                padding: 0;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                height: 100% !important;
+                width: 100% !important;
+              ">
+                            <!-- EMAIL CONTAINER // -->
+                            <!--
+                        	The table "emailBody" is the email's container.
+                            Its width can be set to 100% for a color band
+                            that spans the width of the page.
+                        -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="600" id="emailBody" style="
+                  border-collapse: separate;
+                  mso-table-lspace: 0pt;
+                  mso-table-rspace: 0pt;
+                  -ms-text-size-adjust: 100%;
+                  -webkit-text-size-adjust: 100%;
+                  background-color: #ffffff;
+                  border: 1px solid #dddddd;
+                  border-radius: 4px;
+                ">
+                                <!-- Page - HEADER // -->
+                                <tbody>
+                                    <tr>
+                                        <td align="center" valign="top" style="
+                        mso-table-lspace: 0pt;
+                        mso-table-rspace: 0pt;
+                        -ms-text-size-adjust: 100%;
+                        -webkit-text-size-adjust: 100%;
+                      ">
+                                            <!-- CENTERING TABLE // -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="
+                          border-collapse: collapse;
+                          mso-table-lspace: 0pt;
+                          mso-table-rspace: 0pt;
+                          -ms-text-size-adjust: 100%;
+                          -webkit-text-size-adjust: 100%;
+                        ">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                                -ms-text-size-adjust: 100%;
+                                -webkit-text-size-adjust: 100%;
+                              ">
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer" style="
+                                  border-collapse: collapse;
+                                  mso-table-lspace: 0pt;
+                                  mso-table-rspace: 0pt;
+                                  -ms-text-size-adjust: 100%;
+                                  -webkit-text-size-adjust: 100%;
+                                ">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center" valign="top" width="600" class="" style="
+                                        mso-table-lspace: 0pt;
+                                        mso-table-rspace: 0pt;
+                                        -ms-text-size-adjust: 100%;
+                                        -webkit-text-size-adjust: 100%;
+                                      ">
+                                                                            <!-- Page HEADER POWER IMAGE // -->
+                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader" style="
+                                          border-collapse: collapse;
+                                          mso-table-lspace: 0pt;
+                                          mso-table-rspace: 0pt;
+                                          -ms-text-size-adjust: 100%;
+                                          -webkit-text-size-adjust: 100%;
+                                        ">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td valign="top" class="headerContent" style="
+                                                mso-table-lspace: 0pt;
+                                                mso-table-rspace: 0pt;
+                                                -ms-text-size-adjust: 100%;
+                                                -webkit-text-size-adjust: 100%;
+                                              ">
+                                                                                            <img src="https://neighbourgood-email-assets.s3.eu-west-2.amazonaws.com/booking-email-assets/Camps%20Bay/5.jpg" style="
+                                                  max-width: 600px;
+                                                  border: 0px;
+                                                  outline: none;
+                                                  text-decoration: none;
+                                                  width: 100%;
+                                                " id="headerImage" alt="{*Header Image description*}"/>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <!-- // Page HEADER POWER IMAGE-->
+                                                                            <!-- Page HEADER CONTENT // -->
+                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeaderContent" style="
+                                          border-collapse: collapse;
+                                          mso-table-lspace: 0pt;
+                                          mso-table-rspace: 0pt;
+                                          -ms-text-size-adjust: 100%;
+                                          -webkit-text-size-adjust: 100%;
+                                        ">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td valign="top" class="textContent flexibleContainerCell" style="
+                                                mso-table-lspace: 0pt;
+                                                mso-table-rspace: 0pt;
+                                                -ms-text-size-adjust: 100%;
+                                                -webkit-text-size-adjust: 100%;
+                                                padding-top: 20px;
+                                                padding-right: 20px;
+                                                padding-left: 20px;
+                                                color: #404040;
+                                                font-family: Helvetica;
+                                                font-size: 16px;
+                                                line-height: 130%;
+                                                text-align: Left;
+                                                padding-bottom: 20px;
+                                              "> <h1 style="
+                                                  margin: 0;
+                                                  padding: 0;
+                                                  color: #202020;
+                                                  font-family: Helvetica;
+                                                  line-height: 150%;
+                                                  text-align: Left;
+                                                  margin-bottom: 16px;
+                                                  font-size: 24px;
+                                                ">
+                                                How was your stay? </h1> <p style="
+                                                  margin: 1em 0;
+                                                  -ms-text-size-adjust: 100%;
+                                                  -webkit-text-size-adjust: 100%;
+                                                "> <strong>Hi {{FirstName}},</strong> </p> <p style="
+                                                  margin: 1em 0;
+                                                  -ms-text-size-adjust: 100%;
+                                                  -webkit-text-size-adjust: 100%;
+                                                ">Thank you for visiting, we hope that you had a great time in Cape Town and that you have arrived home safely! <br><br>If you have a few minutes, we would really appreciate some feedback about your stay in the form of a Google Review&nbsp;(<a href="https://maps.app.goo.gl/TZmMSnMfGV8g9gn7A">Link</a>)<br><br>Please let us know if you have any tips on ways for us to improve for future guests.<br></p> </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <!-- // Page HEADER CONTENT-->
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // CENTERING TABLE -->
+                                        </td>
+                                    </tr>
+                                    <!-- // Page HEADER -->
+                                    <!-- MODULE ROW: E01: Reservation details // -->
+                                    <tr>
+                                        <td align="center" valign="top" style="
+                        mso-table-lspace: 0pt;
+                        mso-table-rspace: 0pt;
+                        -ms-text-size-adjust: 100%;
+                        -webkit-text-size-adjust: 100%;
+                      ">
+                                            <!-- CENTERING TABLE // -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="
+                          border-collapse: collapse;
+                          mso-table-lspace: 0pt;
+                          mso-table-rspace: 0pt;
+                          -ms-text-size-adjust: 100%;
+                          -webkit-text-size-adjust: 100%;
+                        ">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                                -ms-text-size-adjust: 100%;
+                                -webkit-text-size-adjust: 100%;
+                              ">
+                                                            <!-- FLEXIBLE CONTAINER // -->
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer" style="
+                                  border-collapse: collapse;
+                                  mso-table-lspace: 0pt;
+                                  mso-table-rspace: 0pt;
+                                  -ms-text-size-adjust: 100%;
+                                  -webkit-text-size-adjust: 100%;
+                                ">
+                                                                <tbody>
+                                                                    <tr></tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <!-- // FLEXIBLE CONTAINER -->
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // CENTERING TABLE -->
+                                        </td>
+                                    </tr>
+                                    <!-- // MODULE ROW: E01: Reservation details  -->
+                                    <!-- Hotel Signature // -->
+                                    <tr>
+                                        <td align="center" valign="top" style="
+                        mso-table-lspace: 0pt;
+                        mso-table-rspace: 0pt;
+                        -ms-text-size-adjust: 100%;
+                        -webkit-text-size-adjust: 100%;
+                      ">
+                                            <!-- CENTERING TABLE // -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="
+                          border-collapse: collapse;
+                          mso-table-lspace: 0pt;
+                          mso-table-rspace: 0pt;
+                          -ms-text-size-adjust: 100%;
+                          -webkit-text-size-adjust: 100%;
+                        ">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="center" valign="top" style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                                -ms-text-size-adjust: 100%;
+                                -webkit-text-size-adjust: 100%;
+                              ">
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer" style="
+                                  border-collapse: collapse;
+                                  mso-table-lspace: 0pt;
+                                  mso-table-rspace: 0pt;
+                                  -ms-text-size-adjust: 100%;
+                                  -webkit-text-size-adjust: 100%;
+                                ">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center" valign="top" width="600" class="" style="
+                                        mso-table-lspace: 0pt;
+                                        mso-table-rspace: 0pt;
+                                        -ms-text-size-adjust: 100%;
+                                        -webkit-text-size-adjust: 100%;
+                                      ">
+                                                                            <!-- Hotel SIgnature CONTENT // -->
+                                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeaderContent" style="
+                                          border-collapse: collapse;
+                                          mso-table-lspace: 0pt;
+                                          mso-table-rspace: 0pt;
+                                          -ms-text-size-adjust: 100%;
+                                          -webkit-text-size-adjust: 100%;
+                                        ">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td valign="top" class="textContent flexibleContainerCell" style="
+                                                mso-table-lspace: 0pt;
+                                                mso-table-rspace: 0pt;
+                                                -ms-text-size-adjust: 100%;
+                                                -webkit-text-size-adjust: 100%;
+                                                padding-top: 20px;
+                                                padding-right: 20px;
+                                                padding-left: 20px;
+                                                color: #404040;
+                                                font-family: Helvetica;
+                                                font-size: 14px;
+                                                line-height: 130%;
+                                                text-align: Left;
+                                                padding-bottom: 20px;
+                                              "> <h4 style="
+                                                  margin: 0;
+                                                  padding: 0;
+                                                  color: #202020;
+                                                  font-family: Helvetica;
+                                                  line-height: 150%;
+                                                  text-align: Left;
+                                                  margin-bottom: 16px;
+                                                  font-size: 14px;
+                                                ">Thank you,<br>Tandeka and the Neighbourgood Romney Team</h4> </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <!-- // Hotel SIgnature CONTENT-->
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- // CENTERING TABLE -->
+                                        </td>
+                                    </tr>
+                                    <!-- // Hotel Signature -->
+                                    <!-- FOOTER -->
+                                    <tr>
+                                        <td align="center" valign="top" style="
+                        mso-table-lspace: 0pt;
+                        mso-table-rspace: 0pt;
+                        -ms-text-size-adjust: 100%;
+                        -webkit-text-size-adjust: 100%;
+                      ">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter" style="
+                          border-collapse: collapse;
+                          mso-table-lspace: 0pt;
+                          mso-table-rspace: 0pt;
+                          -ms-text-size-adjust: 100%;
+                          -webkit-text-size-adjust: 100%;
+                        ">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="footerImage" style="
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                                -ms-text-size-adjust: 100%;
+                                -webkit-text-size-adjust: 100%;
+                              ">
+                                                            <img src="https://neighbourgood-email-assets.s3.eu-west-2.amazonaws.com/booking-email-assets/Neighbourgood-bg.jpg" style="
+                                  width: 100%;
+                                  max-width: 600px;
+                                  border: 0;
+                                  outline: none;
+                                  text-decoration: none;
+                                  -ms-interpolation-mode: bicubic;
+                                  height: auto;
+                                " id="footerImage" alt="{*Footer Image description*}"/>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" class="footerContent flexibleContainerCell" style="
+                                text-size-adjust: 100%;
+                                font-family: Helvetica;
+                                font-size: 12px;
+                                line-height: 150%;
+                                text-align: center;
+                                background-color: rgb(0, 0, 0);
+                                padding: 30px 20px;
+                              ">
+                                                            <div class="footer-container">
+                                                                <div class="column col-1">
+                                                                    <p style="text-align: left; font-size: 12px"> <font color="#ffffff">NEIGHBOURGOOD RAVENSCRAIG</font><br/> <font color="#ffffff">Email: hillreception@neighbourgood.co.za</font><br/> <font color="#ffffff">Tel: +27 21 140 6778</font><br/> <font color="#ffffff">WhatsApp: +27 64 818 5900</font> <br/> <a href="mailto:hello@neighbourgood.co.za" style=""> <font color="#ffffff">https://neighbourgood.co.za </font> </a> </p>
+                                                                </div>
+                                                                <div class="column col-2">
+                                                                    <img src="https://neighbourgood-email-assets.s3.eu-west-2.amazonaws.com/booking-email-assets/slogan.png" height="100px"/>
+                                                                </div>
+                                                                <div class="column col-3">
+                                                                    <span> <a href="https://www.instagram.com/neighbourgood_sa/"> <img src="https://neighbourgood-email-assets.s3.eu-west-2.amazonaws.com/booking-email-assets/003-instagram.png" height="35px" alt="instagram"/> </a> <a href="https://www.facebook.com/neighbourgoodsa" style="padding: 0 5px"> <img src="https://neighbourgood-email-assets.s3.eu-west-2.amazonaws.com/booking-email-assets/001-facebook.png" height="35px" alt="facebook"/> </a> <a href="https://www.linkedin.com/company/neighbourgood/"> <img src="https://neighbourgood-email-assets.s3.eu-west-2.amazonaws.com/booking-email-assets/002-linkedin.png" height="35px" alt="linkedin"/> </a> </span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- // EMAIL CONTAINER -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+    </body>
+</html>
